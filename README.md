@@ -1,12 +1,16 @@
 # k8s-network-performance
 
-This project provides some containers for network performance tests.
+This project provides a container for network performance tests.
 
-Supported tools are
+The container is available at [DockerHub](https://hub.docker.com/r/tomopiro/netperf).
+
+Installed tools are
 
 - [**iperf2**](https://sourceforge.net/projects/iperf2/)
 - [**iperf3**](https://github.com/esnet/iperf)
 - [**netperf**](https://github.com/HewlettPackard/netperf)
+
+and curl, vim as utils.
 
 Note that the iperf2 and iperf3 are not compatible.
 See the [Iperf 2 & Iperf 3 Comparison Table](https://iperf2.sourceforge.io/IperfCompare.html).
