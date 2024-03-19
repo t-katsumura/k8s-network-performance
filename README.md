@@ -1,4 +1,11 @@
+
+![logo](./logo.svg)
+
+<div align="center">
+
 # k8s-network-performance
+
+</div>
 
 This project provides a container for network performance tests.
 
