@@ -1,9 +1,8 @@
+<div align="center">
 
 ![logo](./logo.svg)
 
-<div align="center">
-
-# k8s-network-performance
+# k8s network performance test container
 
 </div>
 
