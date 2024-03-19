@@ -43,17 +43,65 @@ Official documentation can be found at [iperf.fr](https://iperf.fr/iperf-doc.php
 
 `iperf` command is installed in the PATH.
 
+Run a server.
+
+```bash
+# Create a network to access from client.
+docker create network netperf
+
+# Run iperf2 server
+docker run -it --network netperf --hostname netperf tomopiro/netperf iperf -s
+```
+
+Run client and check performance.
+
+```bash
+docker run -it --network netperf tomopiro/netperf iperf -c netperf
+```
+
 ### iperf3
 
 Official documentation can be found at [iperf.fr](https://iperf.fr/iperf-doc.php#3doc).
 
 `iperf3` command is installed in the PATH.
 
+Run a server.
+
+```bash
+# Create a network to access from client.
+docker create network netperf
+
+# Run iperf3 server
+docker run -it --network netperf --hostname netperf tomopiro/netperf iperf3 -s
+```
+
+Run client and check performance.
+
+```bash
+docker run -it --network netperf tomopiro/netperf iperf3 -c netperf
+```
+
 ### netperf
 
 Official documentation can be found at [Care and Feeding of Netperf 2.7.X](https://hewlettpackard.github.io/netperf/doc/netperf.html).
 
 `netperf` command is installed in the PATH.
+
+Run a server.
+
+```bash
+# Create a network to access from client.
+docker create network netperf
+
+# Run iperf2 server
+docker run -it --network netperf --hostname netperf tomopiro/netperf netserver -D -L 0.0.0.0
+```
+
+Run client and check performance.
+
+```bash
+docker run -it --network netperf tomopiro/netperf netperf -H netperf
+```
 
 ## License
 
