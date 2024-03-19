@@ -18,7 +18,7 @@ See the [Iperf 2 & Iperf 3 Comparison Table](https://iperf2.sourceforge.io/Iperf
 - [Ubuntu](https://hub.docker.com/_/ubuntu) is used for the base image.
 - No `Entrypoint` defined (Same as the base image).
 - CMD is `/bin/bash` (Same as the base image).
-- Installed utils are
+- Installed tools are
   - nano
   - curl
   - netperf
@@ -33,26 +33,21 @@ No environmental variables are defined for the container.
 
 ### iperf2
 
-Official documentation can be found at []().
+Official documentation can be found at [iperf.fr](https://iperf.fr/iperf-doc.php#doc).
 
 `iperf` command is installed in the PATH.
 
-```bash
-docker run -it --rm iperf2 iperf -s
-```
-
 ### iperf3
 
-Official documentation can be found at []().
+Official documentation can be found at [iperf.fr](https://iperf.fr/iperf-doc.php#3doc).
+
+`iperf3` command is installed in the PATH.
 
 ### netperf
 
-Official documentation can be found at []().
+Official documentation can be found at [Care and Feeding of Netperf 2.7.X](https://hewlettpackard.github.io/netperf/doc/netperf.html).
 
-```bash
-docker run 
-```
-
+`netperf` command is installed in the PATH.
 
 ## License
 
