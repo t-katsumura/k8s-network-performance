@@ -20,8 +20,6 @@ metadata:
     app: pause-${ID}
   name: pause-${ID}
 spec:
-  nodeSelector:
-    role: master
   containers:
   - name: pause
     image: registry.k8s.io/pause:3.9

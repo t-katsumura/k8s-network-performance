@@ -6,7 +6,7 @@ spec:
   containers:
     - name: client
       command: ["sleep", "99999999"]
-      image: tomopiro/netperf:latest
+      image: tomopiro/netperf
 
 ---
 apiVersion: v1
@@ -18,7 +18,7 @@ metadata:
 spec:
   containers:
     - name: server
-      image: tomopiro/netperf:latest
+      image: tomopiro/netperf
       command: ["iperf", "-s"]
 
 ---
