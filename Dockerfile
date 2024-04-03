@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     libssl-dev \
     git \
     zlib1g-dev \
+    libgnutls30 \
     && git clone https://github.com/giltene/wrk2.git \
     && cd wrk2 \
     && make \
