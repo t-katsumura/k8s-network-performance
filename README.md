@@ -11,6 +11,7 @@ This project provides a container for network performance tests.
 The container is available at [DockerHub](https://hub.docker.com/r/tomopiro/netperf).
 
 Following tools are available in the container.
+`nano editor`, `curl` and `net-tools` are also installed for convenience.
 
 - [**wrk**](https://github.com/wg/wrk)
 - [**wrk2**](https://github.com/giltene/wrk2)
